@@ -32,3 +32,22 @@ vector<int> ret_vector(){
     return array;
 }
 
+void Shape::move(double dx, double dy){
+    cout << "Move shape to - dx: " << dx << " dy: " << dy << endl;
+}
+
+double Shape::area(){
+    return 500;
+}
+
+double Shape::perimeter(){
+    return 555;
+}
+
+Shape::Shape(){
+    cout << "Running \'Shape\' the constructor" << endl;
+}
+
+Shape::~Shape(){
+    cout << "Running \'Shape\' the destructor" << endl;
+}

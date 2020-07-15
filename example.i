@@ -10,6 +10,8 @@
 
 %template(IntVector) std::vector<int>;
 
-int fact(int n);
-void print_vector();
-std::vector<int> ret_vector();
+// int fact(int n);
+// void print_vector();
+// std::vector<int> ret_vector();
+
+%include "example.hpp"
