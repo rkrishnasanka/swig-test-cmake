@@ -122,6 +122,112 @@ class SwigPyIterator(object):
 # Register SwigPyIterator in _example:
 _example.SwigPyIterator_swigregister(SwigPyIterator)
 
+class IntVector(object):
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _example.IntVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _example.IntVector___nonzero__(self)
+
+    def __bool__(self):
+        return _example.IntVector___bool__(self)
+
+    def __len__(self):
+        return _example.IntVector___len__(self)
+
+    def __getslice__(self, i, j):
+        return _example.IntVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _example.IntVector___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _example.IntVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _example.IntVector___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _example.IntVector___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _example.IntVector___setitem__(self, *args)
+
+    def pop(self):
+        return _example.IntVector_pop(self)
+
+    def append(self, x):
+        return _example.IntVector_append(self, x)
+
+    def empty(self):
+        return _example.IntVector_empty(self)
+
+    def size(self):
+        return _example.IntVector_size(self)
+
+    def swap(self, v):
+        return _example.IntVector_swap(self, v)
+
+    def begin(self):
+        return _example.IntVector_begin(self)
+
+    def end(self):
+        return _example.IntVector_end(self)
+
+    def rbegin(self):
+        return _example.IntVector_rbegin(self)
+
+    def rend(self):
+        return _example.IntVector_rend(self)
+
+    def clear(self):
+        return _example.IntVector_clear(self)
+
+    def get_allocator(self):
+        return _example.IntVector_get_allocator(self)
+
+    def pop_back(self):
+        return _example.IntVector_pop_back(self)
+
+    def erase(self, *args):
+        return _example.IntVector_erase(self, *args)
+
+    def __init__(self, *args):
+        _example.IntVector_swiginit(self, _example.new_IntVector(*args))
+
+    def push_back(self, x):
+        return _example.IntVector_push_back(self, x)
+
+    def front(self):
+        return _example.IntVector_front(self)
+
+    def back(self):
+        return _example.IntVector_back(self)
+
+    def assign(self, n, x):
+        return _example.IntVector_assign(self, n, x)
+
+    def resize(self, *args):
+        return _example.IntVector_resize(self, *args)
+
+    def insert(self, *args):
+        return _example.IntVector_insert(self, *args)
+
+    def reserve(self, n):
+        return _example.IntVector_reserve(self, n)
+
+    def capacity(self):
+        return _example.IntVector_capacity(self)
+    __swig_destroy__ = _example.delete_IntVector
+
+# Register IntVector in _example:
+_example.IntVector_swigregister(IntVector)
+
 
 def fact(n):
     return _example.fact(n)

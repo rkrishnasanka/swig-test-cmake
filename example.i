@@ -8,6 +8,7 @@
 #include "example.hpp"
 %}
 
+%template(IntVector) std::vector<int>;
 
 int fact(int n);
 void print_vector();
