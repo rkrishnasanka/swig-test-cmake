@@ -21,7 +21,7 @@ class Shape{
         double perimeter();
         void print_shape();
 
-        static print_shape_vector(std::vector<Shape> shape_array);
+        static void print_shape_vector(std::vector<Shape> shape_array);
 };
 
 

@@ -34,7 +34,7 @@ vector<int> ret_vector(){
 
 void pass_print_vector(std::vector<int> array){
     cout<<"Printing Values of the array:" << endl;
-    for(int i = 0; i<3; i++){
+    for(size_t i = 0; i<array.size(); i++){
         cout<<"Value: " << array[i] << endl;
     }
 }
@@ -68,4 +68,15 @@ void Shape::print_shape(){
     cout << "Printing the shape: " << endl;
     cout << "x - " << x << endl;
     cout << "y - " << y << endl;
+}
+
+void Shape::print_shape_vector(std::vector<Shape> shape_array){
+    cout<<"print_shape_vector is getting called correctly" << endl;
+    cout<<"Number of items:" << shape_array.size() << endl;
+    for(size_t i = 0; i < shape_array.size(); i++){
+        Shape s = shape_array[i];
+        cout << "Shape Object {" << i << "}" << endl;
+        cout << "x- " << s.x << endl;
+        cout << "y- " << s.y << endl;
+    }
 }
