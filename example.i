@@ -9,9 +9,6 @@
 %}
 
 %template(IntVector) std::vector<int>;
-
-// int fact(int n);
-// void print_vector();
-// std::vector<int> ret_vector();
+%template(ShapeVector) std::vector<Shape>;
 
 %include "example.hpp"

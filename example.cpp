@@ -32,6 +32,13 @@ vector<int> ret_vector(){
     return array;
 }
 
+void pass_print_vector(std::vector<int> array){
+    cout<<"Printing Values of the array:" << endl;
+    for(int i = 0; i<3; i++){
+        cout<<"Value: " << array[i] << endl;
+    }
+}
+
 void Shape::move(double dx, double dy){
     cout << "Move shape to - dx: " << dx << " dy: " << dy << endl;
 }
@@ -48,6 +55,17 @@ Shape::Shape(){
     cout << "Running \'Shape\' the constructor" << endl;
 }
 
+Shape::Shape(int argx, int argy){
+    x = argx;
+    y = argy;
+}
+
 Shape::~Shape(){
     cout << "Running \'Shape\' the destructor" << endl;
+}
+
+void Shape::print_shape(){
+    cout << "Printing the shape: " << endl;
+    cout << "x - " << x << endl;
+    cout << "y - " << y << endl;
 }
