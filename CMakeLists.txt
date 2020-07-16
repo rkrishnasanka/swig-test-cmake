@@ -32,11 +32,11 @@ include_directories(${PYTHON_INCLUDE_DIRS} LANGUAGE python)
 
 #tell SWIG to create a new module, called example, 
 #in Python and point to the SWIG interface file (the .i file)
-swig_add_library(example_pyAPI LANGUAGE python SOURCES example.i)
+swig_add_library(example LANGUAGE python SOURCES example.i)
 
-swig_link_libraries(example_pyAPI example_corelib)
+swig_link_libraries(example example_corelib)
 
-swig_link_libraries(example_pyAPI ${PYTHON_INCLUDE_DIRS})
+swig_link_libraries(example ${PYTHON_INCLUDE_DIRS})
 
 
 
